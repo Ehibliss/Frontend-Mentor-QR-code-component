@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preconnect"
-      href=" https://fonts.google.com/specimen/Outfit
-    "
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
     />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -26,23 +26,27 @@
         padding: 0;
       }
       body {
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
         background-color: hsl(212, 45%, 89%);
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        text-align: center;
       }
       h1 {
         color: hsl(218, 44%, 22%);
         font-size: 1.2rem;
         padding: 0;
-        margin-bottom: 10px;
+        font-weight: 700;
       }
       p {
         color: hsl(216, 15%, 48%);
         margin: 0;
         padding: 0;
         font-size: 15px;
+        font-weight: 400;
       }
       .container {
         background-color: hsl(0, 0%, 100%);
@@ -53,7 +57,7 @@
         border-radius: 10px;
         width: 300px;
         padding: 1rem;
-        gap: 20px;
+        gap: 15px;
         margin: 2rem;
       }
       .qr-image {
@@ -64,14 +68,9 @@
         width: 100%;
         border-radius: 10px;
       }
-      .qr-texts {
-        margin: 0 1rem;
-        gap: 20px;
-      }
-      .ar-footer {
-        font-size: 0.6875rem;
 
-        display: flex;
+      .attribution {
+        font-size: 0.6875rem;
       }
       .ar-footer a {
         color: hsl(228, 45%, 44%);
@@ -87,13 +86,12 @@
       <div class="qr-image">
         <img src="./images/image-qr-code.png" alt="qr-image" />
       </div>
-      <div class="qr-texts">
-        <h1>Improve your front-end skills by building projects</h1>
-        <p>
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level
-        </p>
-      </div>
+
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
 
       <footer class="attribution">
         <p class="ar-footer">
