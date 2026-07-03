@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preconnect"
+      href=" https://fonts.google.com/specimen/Outfit
+    "
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+      /* reset style */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: hsl(212, 45%, 89%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      h1 {
+        color: hsl(218, 44%, 22%);
+        font-size: 1.2rem;
+        padding: 0;
+        margin-bottom: 10px;
+      }
+      p {
+        color: hsl(216, 15%, 48%);
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+      }
+      .container {
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 300px;
+        padding: 1rem;
+        gap: 20px;
+        margin: 2rem;
+      }
+      .qr-image {
+        max-width: 300px;
+        object-fit: cover;
+      }
+      .qr-image img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .qr-texts {
+        margin: 0 1rem;
+        gap: 20px;
+      }
+      .ar-footer {
+        font-size: 0.6875rem;
+
+        display: flex;
+      }
+      .ar-footer a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+      }
+      .ar-footer a:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="qr-image">
+        <img src="./images/image-qr-code.png" alt="qr-image" />
+      </div>
+      <div class="qr-texts">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+
+      <footer class="attribution">
+        <p class="ar-footer">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge"
+            >Frontend Mentor</a
+          >
+        </p>
+        <p class="ar-footer">Coded by <a href="#">Blessing</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
